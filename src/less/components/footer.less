@@ -1,0 +1,42 @@
+.footer {
+    background: @primary-bg-color;
+    color: @primary-text-color;
+}
+
+.footer__grid {
+    display: grid;
+    gap: 24px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.footer__brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.footer__heading {
+    margin-bottom: 10px;
+    color: @accent-color;
+    font-size: 1rem;
+}
+
+.footer__list li {
+    padding: 3px 0;
+}
+
+.footer__link {
+    text-decoration: none;
+}
+
+.footer__bottom {
+    padding: 16px 0;
+    border-top: 1px solid @primary-text-color;
+    font-size: 0.85rem;
+}
+
+@media (min-width: @breaks[tablet]) {
+    .footer__grid {
+        grid-template-columns: 2fr 1fr 1fr 1fr;
+    }
+}

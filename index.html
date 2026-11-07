@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zona Tecno</title>
+    <link rel="stylesheet" href="/src/less/style.less">
+</head>
+<body>
+    {{> navbar }}
+
+    <main>
+        {{> hero }}
+
+        <section id="catalogo" class="catalog">
+            <div class="container">
+                <h2 class="catalog__title">Catalogo</h2>
+                <p>Tres equipos para distintos usos y presupuestos.</p>
+
+                <div class="catalog__grid">
+                    {{> card
+                        img="/public/img/spark_40.png"
+                        line="Gama de entrada"
+                        name="Tecno Spark 40"
+                        spec1="Pantalla de 6.7 pulgadas"
+                        spec2="128 GB de almacenamiento"
+                        spec3="Bateria de 5000 mAh"
+                        price="L 3,490"
+                    }}
+                    {{> card
+                        img="/public/img/pova_7.png"
+                        line="Gama media"
+                        name="Tecno Pova 7"
+                        spec1="Pantalla AMOLED de 6.78 pulgadas"
+                        spec2="256 GB y 8 GB de RAM"
+                        spec3="Carga rapida de 45 W"
+                        price="L 6,990"
+                    }}
+                    {{> card
+                        img="/public/img/camon_40.png"
+                        line="Para fotografia"
+                        name="Tecno Camon 40"
+                        spec1="Camara principal de 50 MP"
+                        spec2="Pantalla AMOLED curva"
+                        spec3="256 GB de almacenamiento"
+                        price="L 8,490"
+                    }}
+                </div>
+            </div>
+        </section>
+
+        {{> half-panel
+            title="Te lo entregamos listo para usar"
+            text="Pasamos tus contactos, instalamos tus aplicaciones y revisamos el equipo contigo en la tienda."
+            button="Visitanos"
+            img="/public/img/half_panel.png"
+            alt="Tienda Zona Tecno"
+        }}
+    </main>
+
+    {{> footer }}
+</body>
+</html>

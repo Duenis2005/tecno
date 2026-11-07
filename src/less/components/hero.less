@@ -1,0 +1,45 @@
+.hero {
+    padding: 50px 0;
+}
+
+.hero__grid {
+    display: grid;
+    gap: 30px;
+    align-items: center;
+}
+
+.hero__title {
+    font-size: 2.4rem;
+    line-height: 1.1;
+}
+
+.hero__title span {
+    color: @primary-bg-color;
+}
+
+.hero__lead {
+    margin-top: 16px;
+    max-width: 480px;
+}
+
+.hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+
+.hero__img {
+    width: 100%;
+    border: 2px solid @secundary-text-color;
+}
+
+@media (min-width: @breaks[tablet]) {
+    .hero__grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero__title {
+        font-size: 3.4rem;
+    }
+}

@@ -1,0 +1,43 @@
+.split {
+    display: grid;
+}
+
+.split__text {
+    padding: 50px 20px;
+    background: @third-bg-color;
+    color: @primary-text-color;
+}
+
+.split__title {
+    font-size: 2rem;
+}
+
+.split__lead {
+    margin: 14px 0;
+}
+
+.split__points {
+    margin-bottom: 24px;
+}
+
+.split__points li {
+    padding: 8px 0;
+    border-top: 1px solid @secundary-bg-color;
+}
+
+.split__img {
+    width: 100%;
+    height: 100%;
+    min-height: 260px;
+    object-fit: cover;
+}
+
+@media (min-width: @breaks[desktop]) {
+    .split {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .split__text {
+        padding: 80px 50px;
+    }
+}
